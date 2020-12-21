@@ -6,7 +6,7 @@ using System.Linq;
 
 namespace BoxCorp.App {
 
-    struct Box {
+    public struct Box {
         public int Row;
         public int X;
         public int Y;
@@ -17,7 +17,7 @@ namespace BoxCorp.App {
         public int YEnd => Y + Height;
         public int Area => Width * Height;
     }
-    class Program {
+    public class Program {
         static void Main(string[] args) {
             //Retreive List of boxes from CSV
             List<Box> boxes = ReadBoxCsv();
@@ -31,7 +31,7 @@ namespace BoxCorp.App {
             Console.ReadLine();
         }
 
-        static List<Box> FilterBoxes(List<Box> unfiltered)
+        public static List<Box> FilterBoxes(List<Box> unfiltered)
         {
             //Remove boxes with Rank threshhold below 0.5, and order by Rank Descending
             //Using LINQ due to experience and Readability -> Could improve performance by using Sort
