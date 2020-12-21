@@ -13,4 +13,12 @@
     </Resource>
   </ItemGroup>
 
+ 
+
+  <ItemGroup>
+    <None Update="boxes.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
 </Project>

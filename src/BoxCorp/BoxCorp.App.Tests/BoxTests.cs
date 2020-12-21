@@ -5,6 +5,7 @@ namespace BoxCorp.App.Tests {
     public class BoxTests {
         [TestMethod]
         public void TestMethod1() {
+
         }
     }
 }
